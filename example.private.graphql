@@ -1,0 +1,28 @@
+type Album @model @auth(rules: [{ allow: owner }]) {
+  id: ID!
+  title: String
+  owner: String
+  createdAt: String
+  pictures: [Picture] @connection(name: "AlbumPictures")
+}
+
+type Picture @model @auth(rules: [{ allow: owner }]) {
+  id: ID!
+  name: String
+  owner: String
+  visibility: Visibility
+  file: S3Object
+  createdAt: String
+  album: Album @connection(name: "AlbumPictures")
+}
+
+type S3Object {
+  bucket: String!
+  region: String!
+  key: String!
+}
+
+enum Visibility {
+  public
+  private
+}
