@@ -19,11 +19,11 @@ class Album extends Component {
   state = { owner: "", title: "" };
 
   componentDidMount = async () => {
-    const { username: owner } = await Auth.currentUserInfo();
-    this.setState({
-      owner
-    });
     this.props.data.subscribeToMore(buildSubscription(onCreateAlbum, listAlbums));
+
+    // loading currently loggedin user
+    const { username: owner } = await Auth.currentUserInfo();
+    this.setState({ owner });
   };
 
   handleSubmit = async e => {
