@@ -16,17 +16,20 @@ import { listAlbums } from "../gql/queries";
 
 dayjs.extend(relativeTime);
 class Album extends Component {
-  state = { title: "" };
+  state = { owner: "", title: "" };
 
-  componentDidMount() {
+  componentDidMount = async () => {
+    const { username: owner } = await Auth.currentUserInfo();
+    this.setState({
+      owner
+    });
     this.props.data.subscribeToMore(buildSubscription(onCreateAlbum, listAlbums));
-  }
+  };
 
   handleSubmit = async e => {
     e.preventDefault();
     const id = uuid();
-    const { username: owner } = await Auth.currentUserInfo();
-    const { title } = this.state;
+    const { title, owner } = this.state;
     const createdAt = new Date().toISOString();
 
     this.props.createAlbum({

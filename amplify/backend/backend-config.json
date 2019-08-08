@@ -1,13 +1,12 @@
 {
 	"auth": {
-		"photoalbuma4ec27d6": {
+		"photoalbumtestb01c3e37": {
 			"service": "Cognito",
-			"providerPlugin": "awscloudformation",
-			"dependsOn": []
+			"providerPlugin": "awscloudformation"
 		}
 	},
 	"api": {
-		"photoalbum": {
+		"photoalbumtest": {
 			"service": "AppSync",
 			"providerPlugin": "awscloudformation",
 			"output": {
@@ -16,7 +15,7 @@
 		}
 	},
 	"storage": {
-		"photoalbumstorage": {
+		"photoalbumtestbucket": {
 			"service": "S3",
 			"providerPlugin": "awscloudformation"
 		}
