@@ -15,5 +15,22 @@
                 "photoalbumtestb01c3e37": {}
             }
         }
+    },
+    "production": {
+        "awscloudformation": {
+            "AuthRoleName": "photoalbumtest-production-20190809043058-authRole",
+            "UnauthRoleArn": "arn:aws:iam::885121665536:role/photoalbumtest-production-20190809043058-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::885121665536:role/photoalbumtest-production-20190809043058-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "photoalbumtest-production-20190809043058-deployment",
+            "UnauthRoleName": "photoalbumtest-production-20190809043058-unauthRole",
+            "StackName": "photoalbumtest-production-20190809043058",
+            "StackId": "arn:aws:cloudformation:us-east-1:885121665536:stack/photoalbumtest-production-20190809043058/638e7db0-ba30-11e9-9771-1273bfab49fc"
+        },
+        "categories": {
+            "auth": {
+                "photoalbumtestb01c3e37": {}
+            }
+        }
     }
 }
