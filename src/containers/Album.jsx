@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Form, Container, Grid, Card, Image } from "semantic-ui-react";
+import { Form, Grid, Card, Image } from "semantic-ui-react";
 import { v4 as uuid } from "uuid";
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
@@ -78,10 +78,10 @@ class Album extends Component {
         </fieldset>
 
         <Grid className="albumGrid">
-          <Card.Group itemsPerRow={6} className="albumGroup">
+          <Card.Group itemsPerRow={4} className="albumGroup">
             {this.props.albums.map((album, index) => (
               <Card color="orange" key={index} onClick={() => this.handleAlbumClick(album)}>
-                <Image src="https://react.semantic-ui.com/images/wireframe/white-image.png" wrapped ui={false} />
+                <Image src="/images/album.svg" wrapped ui={false} />
                 <Card.Content>
                   <Card.Header>{album.title}</Card.Header>
                   <Card.Meta>
