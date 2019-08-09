@@ -15,5 +15,22 @@
                 "myalbumtest30434169": {}
             }
         }
+    },
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "myalbumtest-dev-20190809055617-authRole",
+            "UnauthRoleArn": "arn:aws:iam::885121665536:role/myalbumtest-dev-20190809055617-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::885121665536:role/myalbumtest-dev-20190809055617-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "myalbumtest-dev-20190809055617-deployment",
+            "UnauthRoleName": "myalbumtest-dev-20190809055617-unauthRole",
+            "StackName": "myalbumtest-dev-20190809055617",
+            "StackId": "arn:aws:cloudformation:us-east-1:885121665536:stack/myalbumtest-dev-20190809055617/50d8f270-ba3c-11e9-ba19-0a325fb8c980"
+        },
+        "categories": {
+            "auth": {
+                "myalbumtest30434169": {}
+            }
+        }
     }
 }
