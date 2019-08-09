@@ -1,0 +1,19 @@
+{
+    "master": {
+        "awscloudformation": {
+            "AuthRoleName": "myalbumtest-master-20190809052941-authRole",
+            "UnauthRoleArn": "arn:aws:iam::885121665536:role/myalbumtest-master-20190809052941-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::885121665536:role/myalbumtest-master-20190809052941-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "myalbumtest-master-20190809052941-deployment",
+            "UnauthRoleName": "myalbumtest-master-20190809052941-unauthRole",
+            "StackName": "myalbumtest-master-20190809052941",
+            "StackId": "arn:aws:cloudformation:us-east-1:885121665536:stack/myalbumtest-master-20190809052941/97ece350-ba38-11e9-be2f-0a0bad6f0bfa"
+        },
+        "categories": {
+            "auth": {
+                "myalbumtest30434169": {}
+            }
+        }
+    }
+}
