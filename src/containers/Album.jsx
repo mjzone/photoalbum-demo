@@ -81,7 +81,7 @@ class Album extends Component {
           <Card.Group itemsPerRow={6} className="albumGroup">
             {this.props.albums.map((album, index) => (
               <Card color="orange" key={index} onClick={() => this.handleAlbumClick(album)}>
-                <Image src="https://react.semantic-ui.com/images/wireframe/white-image.png" wrapped ui={false} />
+                <Image src="/images/color-album.svg" wrapped ui={false} />
                 <Card.Content>
                   <Card.Header>{album.title}</Card.Header>
                   <Card.Meta>
